@@ -1267,6 +1267,46 @@ public class SettingsActivity extends Activity
                     if (!Utils.updateTileToSpecificActivityFromMetaDataOrRemove(this, tile)) {
                         removeTile = true;
                     }
+				} else if (id == R.id.supersu_settings) {
+                    // Embedding into Settings is supported from SuperSU v1.85 and up
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+				} else if (id == R.id.synapse) {
+                    // Embedding into Settings is supported from Synapse and up
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.af.synapse", 0).versionCode >= 0);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+				} else if (id == R.id.lmt_launcher) {
+                    // Embedding into Settings is supported from LMT Launcher and up
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.noname81.lmt", 0).versionCode >= 0);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.xposed_frameworks) {
+                    // Embedding into Settings is supported from Kernel Adiutor and up
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("de.robv.android.xposed.installer", 0).versionCode >= 0);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
                 } else if (id == R.id.wifi_settings) {
                     // Remove WiFi Settings if WiFi service is not available.
                     if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI)) {

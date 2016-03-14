@@ -234,7 +234,7 @@
                 android:id="@+id/status_bar_settings"
                 android:title="@string/status_bar_title"
                 android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
-                android:icon="@drawable/ic_settings_statusbar"
+                android:icon="@drawable/ic_settings_extdesk_hidenavbar"
                 />
 
         <!-- Application Settings -->
@@ -273,6 +273,60 @@
                 android:icon="@drawable/ic_settings_location"
                 />
 
+    </dashboard-category>
+
+    <!-- Arsenic Extras-->
+    <dashboard-category
+            android:id="@+id/arsenic_extras_section"
+            android:title="@string/header_category_arsenic_extras" >
+
+	<!-- SuperSU -->
+        <dashboard-tile
+            	android:id="@+id/supersu_settings"
+            	android:icon="@drawable/ic_settings_supersu"
+            	android:summary="@string/supersu_summary"
+            	android:title="@string/supersu_title">
+            <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="eu.chainfire.supersu"
+                    android:targetClass="eu.chainfire.supersu.MainActivity" />
+	</dashboard-tile>
+
+	<!-- Xposed-->
+	<dashboard-tile 
+		android:icon="@drawable/ic_settings_xposed"
+		android:id="@+id/xposed_frameworks" 
+		android:summary="@string/xposed_summary"
+		android:title="@string/xposed_title">
+	    <intent 
+		    android:targetPackage="de.robv.android.xposed.installer" 
+		    android:action="android.intent.action.MAIN"
+		    android:targetClass="de.robv.android.xposed.installer.WelcomeActivity" />
+	</dashboard-tile>
+
+	<!-- LMT Launcher-->
+	<dashboard-tile 
+		android:icon="@drawable/ic_settings_lmt"
+		android:id="@+id/lmt_launcher" 
+		android:summary="@string/lmt_summary"
+		android:title="@string/lmt_title">
+	    <intent 
+		    android:targetPackage="com.noname81.lmt" 
+		    android:action="android.intent.action.MAIN"
+		    android:targetClass="com.noname81.lmt.LMT" />
+	</dashboard-tile>
+
+	<!-- Synapse -->
+	<dashboard-tile
+		android:icon="@drawable/ic_settings_synapse"
+		android:id="@+id/synapse"
+		android:summary="@string/synapse_summary"
+		android:title="@string/synapse_title">
+            <intent 
+		    android:targetPackage="com.af.synapse" 
+		    android:action="android.intent.action.MAIN" 
+		    android:targetClass="com.af.synapse.MainActivity" />
+        </dashboard-tile>
     </dashboard-category>
 
     <!-- SYSTEM -->

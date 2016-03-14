@@ -53,6 +53,8 @@
     <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
     <string name="header_category_personal">Personal</string>
     <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
+    <string name="header_category_arsenic_extras">Arsenic Extras</string>
+    <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
     <string name="header_category_access">Access</string>
     <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
     <string name="header_category_system">System</string>
@@ -7054,4 +7056,36 @@
 
     <!-- Toast message letting the user know the color temperature setting is not immediate -->
     <string name="color_temperature_toast">To apply color change, turn off screen</string>
+
+    <!-- Protected Apps -->
+    <string name="menu_hidden_apps_delete">Reset</string>
+    <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
+    <string name="protected_apps">Protected apps</string>
+    <string name="saving_protected_components">Saving component state</string>
+    
+<!-- Arsenic Addons -->
+
+    <!-- Arsenic Version  [CHAR LIMIT=60] -->
+    <string name="Arsenic_os">Arsenic Version</string>
+    <string name="Arsenic_os_version">Version 3.6</string>
+
+    <!-- Settings main menu category heading. System (Arsenic Addons). [CHAR LIMIT=40] -->
+    <string name="header_category_arsenicos">Arsenic Addons</string>
+
+	<!-- SuperSU -->
+	<string name="supersu_title">SuperSU</string>
+	<string name="supersu_summary">Root access management tool</string>
+
+	<!-- Synapse -->
+	<string name="synapse_title">Synapse</string>
+	<string name="synapse_summary">Control your kernel settings</string>
+
+	<!-- Xposed Installer-->
+	<string name="xposed_title">Xposed</string>
+	<string name="xposed_summary">Manage xposed frameworks</string>
+
+	<!-- LMT Launcher-->
+	<string name="lmt_title">LMT</string>
+	<string name="lmt_summary">Manage LMT Pie Launcher</string>
+
 </resources>
