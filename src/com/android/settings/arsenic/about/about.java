@@ -110,7 +110,7 @@ private static final String ARSENIC_ROM_SHARE = "share";
         } else if (preference == mSourceUrl) {
             launchUrl("https://github.com/Juancarlospr5");
         } else if (preference == mDonateUrl) {
-            launchUrl("https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=wcCfCUOkZcwcn0lcFPhhMjxwdUYciHzbDa0bLgbNV0VRgZUorosFGZ6k8hy&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2");
+            launchUrl("http://forum.xda-developers.com/donatetome.php?u=5212200");
         } else if (preference == mSourcebaseUrl) {
             launchUrl("https://github.com/CyanogenMod");
         } else if (preference.getKey().equals(ARSENIC_ROM_SHARE)) {
