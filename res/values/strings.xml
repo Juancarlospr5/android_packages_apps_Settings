@@ -7080,12 +7080,8 @@
 	<string name="synapse_title">Synapse</string>
 	<string name="synapse_summary">Control your kernel settings</string>
 
-	<!-- Xposed Installer-->
-	<string name="xposed_title">Xposed</string>
-	<string name="xposed_summary">Manage xposed frameworks</string>
-
-	<!-- LMT Launcher-->
-	<string name="lmt_title">LMT</string>
-	<string name="lmt_summary">Manage LMT Pie Launcher</string>
+	<!-- Ota Updater-->
+	<string name="ota_title">Ota Updater</string>
+	<string name="ota_summary">Manage Ota Updates</string>
 
 </resources>

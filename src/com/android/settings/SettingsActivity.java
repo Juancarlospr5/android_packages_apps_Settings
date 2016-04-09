@@ -1293,21 +1293,11 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
-				} else if (id == R.id.lmt_launcher) {
-                    // Embedding into Settings is supported from LMT Launcher and up
+				} else if (id == R.id.ota_updater) {
+                    // Embedding into Settings is supported from Ota Updater and up
                     boolean supported = false;
                     try {
-                        supported = (getPackageManager().getPackageInfo("com.noname81.lmt", 0).versionCode >= 0);
-                    } catch (PackageManager.NameNotFoundException e) {
-                    }
-                    if (!supported) {
-                        removeTile = true;
-                    }
-                } else if (id == R.id.xposed_frameworks) {
-                    // Embedding into Settings is supported from Kernel Adiutor and up
-                    boolean supported = false;
-                    try {
-                        supported = (getPackageManager().getPackageInfo("de.robv.android.xposed.installer", 0).versionCode >= 0);
+                        supported = (getPackageManager().getPackageInfo("com.otaupdater", 0).versionCode >= 0);
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                     if (!supported) {

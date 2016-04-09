@@ -292,28 +292,16 @@
                     android:targetClass="eu.chainfire.supersu.MainActivity" />
 	</dashboard-tile>
 
-	<!-- Xposed-->
+	<!-- Ota Updater-->
 	<dashboard-tile 
-		android:icon="@drawable/ic_settings_xposed"
-		android:id="@+id/xposed_frameworks" 
-		android:summary="@string/xposed_summary"
-		android:title="@string/xposed_title">
+		android:icon="@drawable/ic_settings_ota"
+		android:id="@+id/ota_updater" 
+		android:summary="@string/ota_summary"
+		android:title="@string/ota_title">
 	    <intent 
-		    android:targetPackage="de.robv.android.xposed.installer" 
+		    android:targetPackage="com.otaupdater" 
 		    android:action="android.intent.action.MAIN"
-		    android:targetClass="de.robv.android.xposed.installer.WelcomeActivity" />
-	</dashboard-tile>
-
-	<!-- LMT Launcher-->
-	<dashboard-tile 
-		android:icon="@drawable/ic_settings_lmt"
-		android:id="@+id/lmt_launcher" 
-		android:summary="@string/lmt_summary"
-		android:title="@string/lmt_title">
-	    <intent 
-		    android:targetPackage="com.noname81.lmt" 
-		    android:action="android.intent.action.MAIN"
-		    android:targetClass="com.noname81.lmt.LMT" />
+		    android:targetClass="com.otaupdater.OTAUpdaterActivity" />
 	</dashboard-tile>
 
 	<!-- Synapse -->
