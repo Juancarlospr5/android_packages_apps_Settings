@@ -78,4 +78,21 @@
     <string name="brightness_icon_title">Brightness Icon </string>
     <string name="brightness_icon_summary">Enable Disable The Brightness Icon Existing Next To Brightness Slider</string>
 
+    <!-- Lockscreen Settings -->
+    <string name="arsenic_ls_ui">LockScreen UI</string>
+    <string name="arsenic_lockscreen_date">Date and Time</string>
+    <string name="arsenic_ls_settings">Customizations</string>
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_clock_title">Clock</string>
+    <string name="hide_lockscreen_clock_summary">Show lockscreen clock</string>
+    <string name="hide_lockscreen_date_title">Date</string>
+    <string name="hide_lockscreen_date_summary">Show lockscreen date</string>
+    <string name="hide_lockscreen_alarm_title">Alarm</string>
+    <string name="hide_lockscreen_alarm_summary">Show lockscreen alarm</string>
+
+    <!-- Charging lockscreen  -->
+    <string name="lock_screen_show_current">Charging Current</string>
+    <string name="lock_screen_show_current_summary">Show Charging Current rate on lock screen</string>
+
 </resources>
