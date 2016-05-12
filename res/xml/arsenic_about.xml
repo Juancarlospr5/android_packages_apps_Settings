@@ -52,6 +52,8 @@
         android:key="thanksrom"
         android:title="@string/thanks"> 
         
+        <PreferenceScreen android:key="forums"
+        android:title="@string/forums" />
         <PreferenceScreen android:key="thanksall"
         android:title="@string/thanks_all" />
 
