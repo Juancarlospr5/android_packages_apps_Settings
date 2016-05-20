@@ -42,4 +42,26 @@
     <string name="network_traffic_autohide_summary">Ocultar el monitor de tráfico cuando no hay actividad</string>
     <string name="network_traffic_autohide_threshold">Umbral de inactividad</string>
 
+    <!-- QS Tiles Columns -->
+    <string name="qs_num_columns_title">Número de fichas QS por fila</string>
+    <string name="qs_num_columns_showing">Mostrar %1$s ficha por fila</string>
+    <string name="arsenic_tuner_summary">test</string>
+
+    <!-- Notification Drawer -->
+    <string name="notification_drawer_title">Notification Drawer</string>
+    <string name="arsenic_qs_cat">Cortina de Ajustes Rápidos</string>
+    <string name="rr_qs">Quick Settings</string>
+    <string name="rr_brightness_cat">Brightness Slider</string>
+    <string name="arsenic_qs_title">Panel de Ajustes rápidos</string>
+
+    <string name="arsenic_cat_title">Categorías</string>
+    <string name="arsenic_settings_title">Configuración</string>
+
+    <!-- QuickSettings main tiles -->
+    <string name="qs_main_tiles_title">Ampliar la primera fila</string>
+    <string name="qs_main_tiles_summary_on">Dos ajustes principales en la primera fila</string>
+    <string name="qs_main_tiles_summary_off">3, 4 o 5 ajustes en cada fila</string>
+    
+    <!-- QuickSettings main tiles -->
+    <string name="quick_settings_title_advanced_location">Habilitar Localización Trizona En Qs</string>
 </resources>
