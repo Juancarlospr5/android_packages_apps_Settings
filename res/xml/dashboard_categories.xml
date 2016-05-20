@@ -280,6 +280,13 @@
             android:id="@+id/arsenic_extras_section"
             android:title="@string/header_category_arsenic_extras" >
 
+        <!-- Arsenic -->
+        <dashboard-tile
+                android:id="@+id/main_settings"
+                android:title="@string/arsenic_settings_title"
+                android:fragment="com.android.settings.arsenic.MainSettings"
+                />
+
 	<!-- SuperSU -->
         <dashboard-tile
             	android:id="@+id/supersu_settings"

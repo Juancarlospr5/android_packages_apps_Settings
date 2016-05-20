@@ -42,4 +42,26 @@
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
 
+    <!-- QS Tiles Columns -->
+    <string name="qs_num_columns_title">Number of QS tiles per row</string>
+    <string name="qs_num_columns_showing">%1$s tiles per row showing</string>
+    <string name="arsenic_tuner_summary">test</string>
+
+    <!-- Notification Drawer -->
+    <string name="notification_drawer_title">Notification Drawer</string>
+    <string name="arsenic_qs_cat">Quick Settings PullDown</string>
+    <string name="rr_qs">Quick Settings</string>
+    <string name="rr_brightness_cat">Brightness Slider</string>
+    <string name="arsenic_qs_title">QuickSettings Panel </string>
+
+    <string name="arsenic_cat_title">Categories</string>
+    <string name="arsenic_settings_title">Configurations</string>
+
+    <!-- QuickSettings main tiles -->
+    <string name="qs_main_tiles_title">Enlarge first row</string>
+    <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
+    <string name="qs_main_tiles_summary_off">3, 4 or 5 tiles on each row</string>
+    
+    <!-- QuickSettings main tiles -->
+    <string name="quick_settings_title_advanced_location">Enable Three Location States In Qs</string>
 </resources>
