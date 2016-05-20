@@ -43,8 +43,8 @@
     <string name="network_traffic_autohide_threshold">Umbral de inactividad</string>
 
     <!-- QS Tiles Columns -->
-    <string name="qs_num_columns_title">Número de fichas QS por fila</string>
-    <string name="qs_num_columns_showing">Mostrar %1$s ficha por fila</string>
+    <string name="qs_num_columns_title">Número de ajustes QS por fila</string>
+    <string name="qs_num_columns_showing">Mostrar %1$s ajustes por fila</string>
     <string name="arsenic_tuner_summary">test</string>
 
     <!-- Notification Drawer -->
