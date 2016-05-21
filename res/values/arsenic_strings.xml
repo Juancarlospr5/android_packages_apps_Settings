@@ -64,4 +64,9 @@
     
     <!-- QuickSettings main tiles -->
     <string name="quick_settings_title_advanced_location">Enable Three Location States In Qs</string>
+
+    <!-- About device screen, CPU and RAM info. -->
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">RAM</string>
+
 </resources>
