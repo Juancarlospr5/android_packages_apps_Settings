@@ -76,7 +76,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         ContentResolver resolver = getActivity().getContentResolver();
 
 	mShowFourG = (SwitchPreference) findPreference(SHOW_FOURG);
-        if (RRUtils.isWifiOnly(getActivity())) {
+        if (ArsenicUtils.isWifiOnly(getActivity())) {
             prefSet.removePreference(mShowFourG);
         } else {
         mShowFourG.setChecked((Settings.System.getInt(resolver,
