@@ -23,7 +23,6 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.SwitchPreference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -37,7 +36,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import com.android.internal.util.arsenic.ArsenicUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,9 +47,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener, Indexable {
 
     private static final String TAG = "StatusBar";
-
-    private static final String SHOW_FOURG = "show_fourg";
-    private SwitchPreference mShowFourG;
 
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
@@ -74,14 +69,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.status_bar_settings);
 
         ContentResolver resolver = getActivity().getContentResolver();
-
-	mShowFourG = (SwitchPreference) findPreference(SHOW_FOURG);
-        if (RRUtils.isWifiOnly(getActivity())) {
-            prefSet.removePreference(mShowFourG);
-        } else {
-        mShowFourG.setChecked((Settings.System.getInt(resolver,
-                Settings.System.SHOW_FOURG, 0) == 1));
-        }
 
         mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
@@ -186,17 +173,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             return true;
         }
         return false;
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if  (preference == mShowFourG) {
-            boolean checked = ((SwitchPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.SHOW_FOURG, checked ? 1:0);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {

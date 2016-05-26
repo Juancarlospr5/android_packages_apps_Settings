@@ -56,12 +56,6 @@
         android:entries="@array/status_bar_battery_percentage_entries"
         android:entryValues="@array/status_bar_battery_percentage_values" />
 
-        <SwitchPreference
-            android:key="show_fourg"
-            android:title="@string/show_fourg_title"
-            android:summary="@string/show_fourg_summary"
-            android:defaultValue="false" />
-
     <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
         android:title="@string/status_bar_toggle_brightness"
@@ -85,7 +79,5 @@
         android:fragment="com.android.settings.arsenic.NetworkTraffic"
 	android:summary="@string/network_traffic_summary"
 	android:title="@string/network_traffic_title" />
-
-
 
 </PreferenceScreen>
