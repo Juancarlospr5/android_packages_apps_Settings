@@ -507,7 +507,9 @@
   <!-- Power menu -->
   <string name="power_menu_title">Menú de apagado</string>
   <string name="power_menu_reboot_title">Menú de reinicio</string>
-  <string name="power_menu_screenshot_title">Capturar pantalla</string>
+  <string name="power_menu_screenshot_title">Capturar de pantalla</string>
+  <string name="power_menu_screenrecord_title">Grabar pantalla</string>
+  <string name="power_menu_profiles_title">Profile switcher</string>
   <string name="power_menu_airplane_title">Modo avión</string>
   <string name="power_menu_users_title">Selector de usuario</string>
   <string name="power_menu_settings_title">Atajo de configuración</string>
