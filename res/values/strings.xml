@@ -7067,7 +7067,7 @@
 
     <!-- Arsenic Version  [CHAR LIMIT=60] -->
     <string name="Arsenic_os">Versión de Arsenic </string>
-    <string name="Arsenic_os_version">4.3</string>
+    <string name="Arsenic_os_version">4.4</string>
 
     <!-- Settings main menu category heading. System (Arsenic Addons). [CHAR LIMIT=40] -->
     <string name="header_category_arsenicos">Arsenic Addons</string>
