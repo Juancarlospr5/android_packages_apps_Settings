@@ -24,13 +24,15 @@
                 android:id="@+id/status_bar_settings"
                 android:title="@string/status_bar_title"
                 android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
+                android:icon="@drawable/ic_settings_statusbar"
                 />
 
     <!-- QS Panel -->
     <PreferenceScreen
             android:id="@+id/Qs_customizations"
             android:title="@string/arsenic_qs_title"
-            android:fragment="com.android.settings.arsenic.QsPanel" 
+            android:fragment="com.android.settings.arsenic.QsPanel"
+            android:icon="@drawable/ic_settings_quickpanel"
 	    />
                 
 </PreferenceCategory>
