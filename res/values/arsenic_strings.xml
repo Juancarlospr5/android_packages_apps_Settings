@@ -79,6 +79,7 @@
     <string name="brightness_icon_summary">Enable Disable The Brightness Icon Existing Next To Brightness Slider</string>
 
     <!-- Lockscreen Settings -->
+    <string name="arsenic_lockscreen_title">Lock Screen</string>
     <string name="arsenic_ls_ui">LockScreen UI</string>
     <string name="arsenic_lockscreen_date">Date and Time</string>
     <string name="arsenic_ls_settings">Customizations</string>

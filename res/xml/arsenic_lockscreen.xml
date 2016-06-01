@@ -21,7 +21,7 @@
         android:title="@string/arsenic_ls_settings">
 
         <PreferenceScreen
-                android:title="@string/rr_ls_ui"
+                android:title="@string/arsenic_ls_ui"
                 android:fragment="com.android.settings.arsenic.LockscreenUI" />
 
 </PreferenceCategory>

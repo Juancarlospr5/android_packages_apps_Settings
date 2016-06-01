@@ -37,7 +37,7 @@
 
     <!-- LockScreen Settings -->
     <PreferenceScreen
-	    android:title="@string/rr_lockscreen_title"	
+	    android:title="@string/arsenic_lockscreen_title"	
             android:key="lock_screen_general_category"
             android:fragment="com.android.settings.arsenic.LockScreenSettings"  
             android:icon="@drawable/ic_settings_lockscreen"
