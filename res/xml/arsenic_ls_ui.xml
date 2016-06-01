@@ -44,3 +44,4 @@
         android:defaultValue="false" />
 
     </PreferenceCategory>
+</PreferenceScreen>
