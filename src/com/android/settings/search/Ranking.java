@@ -54,6 +54,8 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.arsenic.QsPanel;
+import com.android.settings.arsenic.LockScreenSettings;
+import com.android.settings.arsenic.LockscreenUI;
 import com.android.settings.ButtonSettings;
 import com.android.settings.cyanogenmod.StatusBarSettings;
 
@@ -88,6 +90,8 @@ public final class Ranking {
     public static final int RANK_DEVICE_INFO = 22;
     public static final int RANK_ARSENIC = 23;
     public static final int RANK_ARSENIC_QSPANEL = 24;
+    public static final int RANK_ARSENIC_LOCKSCREEN = 25;
+    public static final int RANK_ARSENIC_LSUI = 26;
     public static final int RANK_UNDEFINED = -1;
     public static final int RANK_OTHERS = 1024;
     public static final int BASE_RANK_DEFAULT = 2048;
@@ -123,6 +127,8 @@ public final class Ranking {
         // Arsenic
         sRankMap.put(MainSettings.class.getName(), RANK_ARSENIC);
         sRankMap.put(QsPanel.class.getName(), RANK_ARSENIC_QSPANEL);
+        sRankMap.put(MainSettings.class.getName(), RANK_ARSENIC_LOCKSCREEN);
+        sRankMap.put(MainSettings.class.getName(), RANK_ARSENIC_LSUI);
 
         // Display
         sRankMap.put(DisplaySettings.class.getName(), RANK_DISPLAY);
