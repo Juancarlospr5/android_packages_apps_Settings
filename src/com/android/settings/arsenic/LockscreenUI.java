@@ -31,7 +31,7 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.os.UserHandle;
 import android.os.UserManager;
-import com.android.settings.rr.SeekBarPreference;
+import com.android.settings.arsenic.SeekBarPreference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.preference.SwitchPreference;
@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class LockscreenUI extends SettingsPreferenceFragment  implements OnPreferenceChangeListener , Indexable{
+public class LockscreenUI extends SettingsPreferenceFragment  implements Indexable {
 
 
 
@@ -74,7 +74,7 @@ public class LockscreenUI extends SettingsPreferenceFragment  implements OnPrefe
                              new ArrayList<SearchIndexableResource>();
  
                      SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.rr_ls_ui;
+                    sir.xmlResId = R.xml.arsenic_ls_ui;
                      result.add(sir);
  
                      return result;
