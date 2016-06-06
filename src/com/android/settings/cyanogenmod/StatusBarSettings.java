@@ -18,6 +18,7 @@ package com.android.settings.cyanogenmod;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -28,7 +29,9 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
+import android.preference.PreferenceScreen;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.view.View;
 
 import com.android.internal.logging.MetricsLogger;
@@ -51,7 +54,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String TAG = "StatusBar";
 
     private static final String SHOW_FOURG = "show_fourg";
+    private static final String SHOW_THREEG = "show_threeg";	
     private SwitchPreference mShowFourG;
+    private SwitchPreference mShowThreeG;
 
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
@@ -68,19 +73,45 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mQuickPulldown;
 
+    private boolean mCheckPreferences;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+	createCustomView();
+    }
+
+    private PreferenceScreen createCustomView() {
+        mCheckPreferences = false;
         addPreferencesFromResource(R.xml.status_bar_settings);
 
-        ContentResolver resolver = getActivity().getContentResolver();
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver(); 
+        Context context = getActivity();
 
+        PackageManager pm = getPackageManager();
+        Resources systemUiResources;
+        try {
+            systemUiResources = pm.getResourcesForApplication("com.android.systemui");
+        } catch (Exception e) {
+            Log.e(TAG, "can't access systemui resources",e);
+            return null;
+        }
+          
 	mShowFourG = (SwitchPreference) findPreference(SHOW_FOURG);
         if (ArsenicUtils.isWifiOnly(getActivity())) {
             prefSet.removePreference(mShowFourG);
         } else {
         mShowFourG.setChecked((Settings.System.getInt(resolver,
                 Settings.System.SHOW_FOURG, 0) == 1));
+        }
+
+	mShowThreeG = (SwitchPreference) findPreference(SHOW_THREEG);
+        if (ArsenicUtils.isWifiOnly(getActivity())) {
+            prefSet.removePreference(mShowThreeG);
+        } else {
+        mShowThreeG.setChecked((Settings.System.getInt(resolver,
+                Settings.System.SHOW_THREEG, 0) == 1));
         }
 
         mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
@@ -125,6 +156,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mQuickPulldown.setValue(String.valueOf(quickPulldown));
         updatePulldownSummary(quickPulldown);
         mQuickPulldown.setOnPreferenceChangeListener(this);
+
+        setHasOptionsMenu(true);
+        mCheckPreferences = true;
+        return prefSet;
     }
 
     @Override
@@ -194,6 +229,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SHOW_FOURG, checked ? 1:0);
+            return true;
+        } else if  (preference == mShowThreeG) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SHOW_THREEG, checked ? 1:0);
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
