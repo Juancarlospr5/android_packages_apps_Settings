@@ -51,17 +51,56 @@
     <string name="notification_drawer_title">Notification Drawer</string>
     <string name="arsenic_qs_cat">Cortina de Ajustes Rápidos</string>
     <string name="rr_qs">Quick Settings</string>
-    <string name="rr_brightness_cat">Brightness Slider</string>
+    <string name="rr_brightness_cat">Barra de Brillo</string>
     <string name="arsenic_qs_title">Panel de Ajustes rápidos</string>
 
     <string name="arsenic_cat_title">Categorías</string>
     <string name="arsenic_settings_title">Configuración</string>
 
     <!-- QuickSettings main tiles -->
-    <string name="qs_main_tiles_title">Ampliar la primera fila</string>
+    <string name="quick_settings_title_enlarge_first_row">Ampliar la primera fila</string>
     <string name="qs_main_tiles_summary_on">Dos ajustes principales en la primera fila</string>
     <string name="qs_main_tiles_summary_off">3, 4 o 5 ajustes en cada fila</string>
     
     <!-- QuickSettings main tiles -->
     <string name="quick_settings_title_advanced_location">Habilitar Localización Trizona En Qs</string>
+
+    <!-- Quick settings brightness slider -->
+    <string name="qs_brightness_slider_title">Barra de Brillo</string>
+    <string name="qs_brightness_slider_summary">Activar/Desactivar la barra de brillo en los ajustes rápidos</string>
+
+    <!-- Brightness Icon  -->
+    <string name="brightness_icon_title">Icono de brillo</string>
+    <string name="brightness_icon_summary">Activar/Desactivar el icono de brillo junto al control de brillo</string>
+
+    <!-- Lockscreen Settings -->
+    <string name="arsenic_lockscreen_title">Pantalla de Bloqueo</string>
+    <string name="arsenic_ls_ui">Ajustes Pantalla de Bloqueo</string>
+    <string name="arsenic_lockscreen_date">Fecha y Hora</string>
+    <string name="arsenic_ls_settings">Personalización</string>
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_clock_title">Hora</string>
+    <string name="hide_lockscreen_clock_summary">Mostrar hora en pantalla de bloqueo</string>
+    <string name="hide_lockscreen_date_title">Fecha</string>
+    <string name="hide_lockscreen_date_summary">Mostrar fecha en pantalla de bloqueo</string>
+    <string name="hide_lockscreen_alarm_title">Alarmz</string>
+    <string name="hide_lockscreen_alarm_summary">Mostrar alarma en pantalla de bloqueo</string>
+
+    <!-- Charging lockscreen  -->
+    <string name="lock_screen_show_current">Carga de corriente</string>
+    <string name="lock_screen_show_current_summary">Mostrar el progreso de la carga en la pantalla de bloqueo</string>
+
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">Fondo de Pantalla</string>
+    <string name="lockscreen_wallpaper_summary">Establecer fondo de pantalla de bloqueo</string>
+    <string name="lockscreen_wallpaper_set_title">Establecer fondo de pantalla de bloqueo</string>
+    <string name="lockscreen_wallpaper_clear_title">Borrar fondo de pantalla de bloqueo</string>
+    <string name="reset_lockscreen_wallpaper">Establecer por defecto</string>
+    <string name="lockscreen_options_title">Opciones</string>
+    <string name="lockscreen_wallpaper_cat">Fondo de Pantalla</string>
+
+
+
+
 </resources>

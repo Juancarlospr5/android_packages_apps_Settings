@@ -59,7 +59,6 @@
     <string name="arsenic_settings_title">Configurations</string>
 
     <!-- QuickSettings main tiles -->
-    <string name="qs_main_tiles_title">Enlarge first row</string>
     <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
     <string name="qs_main_tiles_summary_off">3, 4 or 5 tiles on each row</string>
     <string name="quick_settings_title_enlarge_first_row">Enlarge first row</string>
@@ -109,12 +108,5 @@
     <string name="lockscreen_maxnotif_sumary">Enable adjustment of max lockscreen notifications</string>
     <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
 
-    <!-- Hide Lockscreen clock & date -->
-    <string name="hide_lockscreen_clock_title">Clock</string>
-    <string name="hide_lockscreen_clock_summary">Show lockscreen clock</string>
-    <string name="hide_lockscreen_date_title">Date</string>
-    <string name="hide_lockscreen_date_summary">Show lockscreen date</string>
-    <string name="hide_lockscreen_alarm_title">Alarm</string>
-    <string name="hide_lockscreen_alarm_summary">Show lockscreen alarm</string>
 
 </resources>
