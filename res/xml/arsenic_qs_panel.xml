@@ -35,12 +35,13 @@
          android:title="@string/quick_settings_title_advanced_location"
          android:defaultValue="false"/>
 
-       <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-         android:key="qs_use_main_tiles"
-         android:title="@string/qs_main_tiles_title"
+       <com.android.settings.cyanogenmod.CMSecureSettingSwitchPreference
+         android:key="sysui_qs_main_tiles"
+         android:title="@string/quick_settings_title_enlarge_first_row"
          android:summaryOn="@string/qs_main_tiles_summary_on"
          android:summaryOff="@string/qs_main_tiles_summary_off"
          android:defaultValue="true" />
+
 
 </PreferenceCategory>
 
