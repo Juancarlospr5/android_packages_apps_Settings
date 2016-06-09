@@ -100,7 +100,14 @@
     <string name="lockscreen_options_title">Opciones</string>
     <string name="lockscreen_wallpaper_cat">Fondo de Pantalla</string>
 
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Mostrar 4G en lugar de LTE</string>
+    <string name="show_fourg_summary">Reemplaza LTE por 4G en la barra de estado</string>
+    <string name="statusbar_tuner_category_title">Ocultar elementos de la barra de estado</string>
 
+    <!-- 3G / HSPA switch -->
+    <string name="show_threeg_title">Mostrar 3G en lugar de HSPA</string>
+    <string name="show_threeg_summary">Reemplaza H+ por 3G en la barra de estado</string>
 
 
 </resources>
