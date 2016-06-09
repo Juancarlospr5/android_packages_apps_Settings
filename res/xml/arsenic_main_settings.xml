@@ -43,6 +43,15 @@
             android:icon="@drawable/ic_settings_lockscreen"
             />
                 
+    <!-- Wakelock blocker -->
+    <PreferenceScreen
+            android:key="wakelock_blocker"
+            android:fragment="com.android.settings.arsenic.WakeLockBlocker"
+            android:title="@string/wakelock_blocker_title"
+            android:icon="@drawable/ic_xd_wakelock" 
+            />
+             
+   
 </PreferenceCategory>
 
 </PreferenceScreen>

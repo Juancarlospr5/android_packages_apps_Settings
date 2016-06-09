@@ -70,6 +70,7 @@
     <string name="cpu_info">CPU</string>
     <string name="mem_info">RAM</string>
 
+<<<<<<< HEAD
     <!-- Quick settings brightness slider -->
     <string name="qs_brightness_slider_title">Brightness Slider</string>
     <string name="qs_brightness_slider_summary">Enable/Disable the brightness slider in Quick Settings</string>
@@ -116,5 +117,15 @@
     <!-- 3G / HSPA switch -->
     <string name="show_threeg_title">Show 3G instead of HSPA</string>
     <string name="show_threeg_summary">Replaces H+ statusbar indicator with 3G .</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Wakelock Blocker</string>
+    <string name="wakelock_blocker_summary">Block system wakelocks</string>
+    <string name="wakelock_blocker_save">Save</string>
+    <string name="wakelock_list_header">Available wakelocks</string>
+    <string name="wakelock_blocker_reload">Reload</string>
+    <string name="wakelock_blocker_warning_title">Proceed with caution</string>
+    <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
+
 
 </resources>
