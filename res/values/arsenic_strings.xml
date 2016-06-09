@@ -70,7 +70,6 @@
     <string name="cpu_info">CPU</string>
     <string name="mem_info">RAM</string>
 
-<<<<<<< HEAD
     <!-- Quick settings brightness slider -->
     <string name="qs_brightness_slider_title">Brightness Slider</string>
     <string name="qs_brightness_slider_summary">Enable/Disable the brightness slider in Quick Settings</string>
