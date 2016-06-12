@@ -59,6 +59,7 @@
     <PreferenceScreen
         android:key="carrierlabel"
 	android:title="@string/carrier_options"
+        android:summary="@string/carrierlabel_sumary"
         android:fragment="com.android.settings.arsenic.CarrierLabel" />
 
 
