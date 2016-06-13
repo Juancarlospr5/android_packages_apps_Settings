@@ -51,7 +51,7 @@
     <string name="notification_drawer_title">Notification Drawer</string>
     <string name="arsenic_qs_cat">Cortina de Ajustes Rápidos</string>
     <string name="rr_qs">Quick Settings</string>
-    <string name="rr_brightness_cat">Barra de Brillo</string>
+    <string name="arsenic_brightness_cat">Barra de Brillo</string>
     <string name="arsenic_qs_title">Panel de Ajustes rápidos</string>
 
     <string name="arsenic_cat_title">Categorías</string>
@@ -109,5 +109,44 @@
     <string name="show_threeg_title">Mostrar 3G en lugar de HSPA</string>
     <string name="show_threeg_summary">Reemplaza H+ por 3G en la barra de estado</string>
 
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Bloqueador de Wakelocks</string>
+    <string name="wakelock_blocker_summary">Bloquear wakelocks de sistema</string>
+    <string name="wakelock_blocker_save">Guardar</string>
+    <string name="wakelock_list_header">Wakelocks disponibles</string>
+    <string name="wakelock_blocker_reload">Actualizar</string>
+    <string name="wakelock_blocker_warning_title">Proceder con precaución</string>
+    <string name="wakelock_blocker_warning">Bloquear wakelocks pueden causar la inestabilidad, cierres inesperados o pérdida de datos</string>
+  
+    <!-- Show carrier label and custom color -->
+    <string name="carrier_options">Nombre de operador</string>
+    <string name="show_status_bar_carrier_title">Nombre de operador en la barra de estado</string>
+    <string name="show_status_bar_carrier_summary">Mostrar el nombre del operador en la barra de estado</string>
+    <string name="custom_carrier_label_title">Nombre de operador personalizado</string>
+    <string name="custom_carrier_label_explain">Introduce una nueva etiqueta. Déjala en blanco para volver a la etiqueta por defecto.</string>
+    <string name="status_bar_carrier_size">Tamaño de texto de la etiqueta del operador</string>
+    <string name="custom_carrier_label_notset">Actualmente no se ha establecido una etiqueta personalizada</string>
+    <string name="status_bar_carrier_color">Color para el nombre del operador</string>
+    <string name="cancel">Cancelar</string>
+    <string name="carrierlabel_sumary">Personalizar el texto de la etiqueta del operador en la barra de estado</string>
+
+    <!-- Carrier Label -->
+    <string name="show_carrier_title">Etiqueta de Operador</string>
+    <string name="show_carrier_disabled">Deshabilitado</string>
+    <string name="show_carrier_keyguard">Operador en la pantalla de bloqueo</string>
+    <string name="show_carrier_statusbar">Nombre de operador en la barra de estado</string>
+    <string name="show_carrier_enabled">Habilitado</string>
+
+    <!-- Carrier Label - Hide based on notifications -->
+    <string name="text_title">Texto del tiempo</string>
+    <string name="number_of_notifications_title">Número de notificaciones</string>
+    <string name="number_of_notifications_one_title">1</string>
+    <string name="number_of_notifications_two_title">2</string>
+    <string name="number_of_notifications_three_title">3</string>
+    <string name="number_of_notifications_four_title">4</string>
+    <string name="number_of_notifications_five_title">5</string>
+    <string name="number_of_notifications_six_title">6</string>
+    <string name="carrier_label_hide_label_title">Ocultar etiqueta de operador</string>
+    <string name="carrier_label_number_of_notification_icons_title">Número máximo de iconos antes de ocultar</string>
 
 </resources>
