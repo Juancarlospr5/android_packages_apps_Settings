@@ -7067,21 +7067,18 @@
 
     <!-- Arsenic Version  [CHAR LIMIT=60] -->
     <string name="Arsenic_os">Versión de Arsenic </string>
-    <string name="Arsenic_os_version">4.4</string>
+    <string name="Arsenic_os_version">4.6</string>
 
     <!-- Settings main menu category heading. System (Arsenic Addons). [CHAR LIMIT=40] -->
     <string name="header_category_arsenicos">Arsenic Addons</string>
 
 	<!-- SuperSU -->
 	<string name="supersu_title">SuperSU</string>
-	<string name="supersu_summary">Manejar Acceso Root</string>
 
 	<!-- Synapse -->
-	<string name="synapse_title">Synapse</string>
-	<string name="synapse_summary">Configuración del Kernel</string>
+	<string name="synapse_title">Kernel Settings</string>
 
 	<!-- Ota Updater-->
 	<string name="ota_title">Ota Updater</string>
-	<string name="ota_summary">Actualizaciones OTA</string>
 
 </resources>

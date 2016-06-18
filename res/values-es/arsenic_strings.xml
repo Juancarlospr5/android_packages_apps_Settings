@@ -22,6 +22,15 @@
     <string name="cm_sourcebase">CyanogenMod</string>
     <string name="cm_sourcebase_sumary">https://github.com/CyanogenMod</string>
 
+    <!-- SuperSU -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Synapse -->
+    <string name="synapse_title">Configuración del Kernel</string>
+
+    <!-- Ota Updater-->
+    <string name="ota_title">Actualizaciones OTA</string>
+
     <!-- Network traffic -->
     <string name="network_traffic_title">Tráfico de Red</string>
     <string name="show_network_traffic_state">Monitor de tráfico en la barra de estado</string>
@@ -55,7 +64,7 @@
     <string name="arsenic_qs_title">Panel de Ajustes rápidos</string>
 
     <string name="arsenic_cat_title">Categorías</string>
-    <string name="arsenic_settings_title">Configuración</string>
+    <string name="arsenic_settings_title">Configuración Extra</string>
 
     <!-- QuickSettings main tiles -->
     <string name="quick_settings_title_enlarge_first_row">Ampliar la primera fila</string>

@@ -50,6 +50,28 @@
             android:title="@string/wakelock_blocker_title"
             android:icon="@drawable/ic_settings_wakelock" 
             />
+
+    <!-- SuperSU -->
+    <PreferenceScreen
+            	android:id="@+id/supersu_settings"
+            	android:icon="@drawable/ic_settings_supersu"
+            	android:title="@string/supersu_title">
+            <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="eu.chainfire.supersu"
+                    android:targetClass="eu.chainfire.supersu.MainActivity" />
+	</PreferenceScreen>
+
+    <!-- Ota Updater-->
+    <PreferenceScreen 
+		android:icon="@drawable/ic_settings_ota"
+		android:id="@+id/ota_updater" 
+		android:title="@string/ota_title">
+	    <intent 
+		    android:targetPackage="com.otaupdater" 
+		    android:action="android.intent.action.MAIN"
+		    android:targetClass="com.otaupdater.OTAUpdaterActivity" />
+    </PreferenceScreen>
              
    
 </PreferenceCategory>
