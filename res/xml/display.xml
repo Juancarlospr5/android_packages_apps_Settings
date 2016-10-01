@@ -31,6 +31,16 @@
             <intent android:action="android.intent.action.SHOW_BRIGHTNESS_DIALOG" />
         </PreferenceScreen>
 
+        <!-- Night Mode -->
+        <ListPreference
+            android:key="night_mode"
+            android:title="@string/night_mode_title"
+            settings:keywords="@string/keywords_display_night_mode"
+            android:summary="@string/night_mode_summary"
+            android:persistent="false"
+            android:entries="@array/night_mode_entries"
+            android:entryValues="@array/night_mode_values" />
+
         <!-- Adaptive brightness -->
         <SwitchPreference
                 android:key="auto_brightness"
