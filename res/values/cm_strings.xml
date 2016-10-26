@@ -78,7 +78,7 @@
     <string name="build_date_default" translatable="false">2015-01-01-0000</string>
 
     <!-- CM Updater -->
-    <string name="cmupdate_settings_title">CyanogenMod updates</string>
+    <string name="cmupdate_settings_title">Arsenic updates</string>
 
     <!-- Settings switch for updating Cyanogen recovery -->
     <string name="update_recovery_title">Update Cyanogen recovery</string>

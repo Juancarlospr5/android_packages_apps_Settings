@@ -58,7 +58,7 @@
   <!-- About phone screen, build date -->
   <string name="build_date">Fecha de compilación</string>
   <!-- CM Updater -->
-  <string name="cmupdate_settings_title">Actualizaciones de CyanogenMod</string>
+  <string name="cmupdate_settings_title">Actualizaciones de Arsenic</string>
   <!-- Settings switch for updating Cyanogen recovery -->
   <string name="update_recovery_title">Actualizar recovery de CyanogenMod</string>
   <string name="update_recovery_summary">Actualizar recovery con las actualizaciones del sistema</string>
