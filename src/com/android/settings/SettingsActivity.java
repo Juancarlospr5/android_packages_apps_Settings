@@ -1296,16 +1296,6 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
-				} else if (id == R.id.ota_updater) {
-                    // Embedding into Settings is supported from Ota Updater and up
-                    boolean supported = false;
-                    try {
-                        supported = (getPackageManager().getPackageInfo("com.otaupdater", 0).versionCode >= 0);
-                    } catch (PackageManager.NameNotFoundException e) {
-                    }
-                    if (!supported) {
-                        removeTile = true;
-                    }
                 } else if (id == R.id.wifi_settings) {
                     // Remove WiFi Settings if WiFi service is not available.
                     if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI)) {
