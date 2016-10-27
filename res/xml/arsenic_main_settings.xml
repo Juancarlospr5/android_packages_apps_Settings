@@ -16,6 +16,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/arsenic_settings_title" >
 
+    <!-- Arsenic Updates -->
+    <PreferenceScreen 
+		android:key="cm_updates"
+                android:icon="@drawable/ic_settings_update" 
+                android:title="@string/cmupdate_settings_title"
+                android:summary="@string/system_update_settings_list_item_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.cyanogenmod.updater"
+                    android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
+        </PreferenceScreen>
+
     <!-- Status bar tweaks -->
     <PreferenceCategory
         android:title="@string/arsenic_cat_title">
@@ -26,6 +37,14 @@
                 android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
                 android:icon="@drawable/ic_settings_statusbar"
                 />
+                
+    <!-- Wakelock blocker -->
+    <PreferenceScreen
+            android:key="wakelock_blocker"
+            android:fragment="com.android.settings.arsenic.WakeLockBlocker"
+            android:title="@string/wakelock_blocker_title"
+            android:icon="@drawable/ic_settings_wakelock" 
+            />
 
     <!-- QS Panel -->
     <PreferenceScreen
@@ -42,14 +61,6 @@
             android:fragment="com.android.settings.arsenic.LockScreenSettings"  
             android:icon="@drawable/ic_settings_lockscreen"
             />
-                
-    <!-- Wakelock blocker -->
-    <PreferenceScreen
-            android:key="wakelock_blocker"
-            android:fragment="com.android.settings.arsenic.WakeLockBlocker"
-            android:title="@string/wakelock_blocker_title"
-            android:icon="@drawable/ic_settings_wakelock" 
-            />
 
     <!-- SuperSU -->
     <PreferenceScreen
@@ -62,18 +73,7 @@
                     android:targetClass="eu.chainfire.supersu.MainActivity" />
 	</PreferenceScreen>
 
-    <!-- Ota Updater-->
-    <PreferenceScreen 
-		android:icon="@drawable/ic_settings_ota"
-		android:id="@+id/ota_updater" 
-		android:title="@string/ota_title">
-	    <intent 
-		    android:targetPackage="com.otaupdater" 
-		    android:action="android.intent.action.MAIN"
-		    android:targetClass="com.otaupdater.OTAUpdaterActivity" />
-    </PreferenceScreen>
-             
-   
+               
 </PreferenceCategory>
 
 </PreferenceScreen>
