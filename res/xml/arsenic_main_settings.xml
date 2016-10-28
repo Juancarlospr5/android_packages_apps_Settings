@@ -16,7 +16,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/arsenic_settings_title" >
 
-    <!-- Arsenic Updates -->
+    <!-- Arsenic title tweaks -->
+    <PreferenceCategory
+        android:title="@string/arsenic_cat_title">
+
+    <!-- Arsenic Updater -->
     <PreferenceScreen 
 		android:key="cm_updates"
                 android:icon="@drawable/ic_settings_update" 
@@ -27,10 +31,8 @@
                     android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
         </PreferenceScreen>
 
-    <!-- Status bar tweaks -->
-    <PreferenceCategory
-        android:title="@string/arsenic_cat_title">
-        
+
+    <!-- Status bar tweaks -->        
         <PreferenceScreen
                 android:id="@+id/status_bar_settings"
                 android:title="@string/status_bar_title"
